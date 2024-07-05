@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj1n62famfc1v"]
+
+[ext_resource type="Texture2D" uid="uid://2fbfnp55ulp1" path="res://icon.svg" id="1_tl3gu"]
+[ext_resource type="Script" path="res://scripts/enemy_data_script.gd" id="2_e7lx0"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.239216, 0.564706, 1)
+texture = ExtResource("1_tl3gu")
+flip_h = true
+flip_v = true
+script = ExtResource("2_e7lx0")

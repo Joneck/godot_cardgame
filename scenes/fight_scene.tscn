@@ -1,12 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://clk0dyfkannr0"]
+[gd_scene load_steps=4 format=3 uid="uid://clk0dyfkannr0"]
 
 [ext_resource type="PackedScene" uid="uid://bj1n62famfc1v" path="res://scenes/enemy.tscn" id="1_7862s"]
 [ext_resource type="PackedScene" uid="uid://cqmunft31wqdo" path="res://scenes/player.tscn" id="2_wl3yd"]
+[ext_resource type="PackedScene" uid="uid://dh0itl6e8qxk1" path="res://scenes/card.tscn" id="3_0cvjf"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("2_wl3yd")]
-position = Vector2(163, 360)
+position = Vector2(163, 300)
 
 [node name="enemy" parent="." instance=ExtResource("1_7862s")]
-position = Vector2(998, 360)
+unique_name_in_owner = true
+position = Vector2(998, 300)
+
+[node name="Sprite2D" parent="." instance=ExtResource("3_0cvjf")]
+position = Vector2(598, 515)
+scale = Vector2(0.095, -0.095)
+
+[node name="enemy2" parent="." instance=ExtResource("1_7862s")]
+position = Vector2(782, 124)

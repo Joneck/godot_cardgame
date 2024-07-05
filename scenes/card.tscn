@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dh0itl6e8qxk1"]
+
+[ext_resource type="Texture2D" uid="uid://buimlpvm8xgex" path="res://artwork/dagger.png" id="1_lrggk"]
+[ext_resource type="Script" path="res://scripts/card.gd" id="2_v85tm"]
+
+[node name="Sprite2D" type="Sprite2D"]
+rotation = -1.5708
+scale = Vector2(1, -1)
+texture = ExtResource("1_lrggk")
+script = ExtResource("2_v85tm")

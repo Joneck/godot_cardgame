@@ -12,3 +12,8 @@ func _ready():
 	
 	pass
 	#add getting cards
+
+
+func _on_enemy_targeted(_enemy):
+	
+	pass # Replace with function body.

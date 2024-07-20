@@ -1,6 +1,7 @@
 extends Node2D
 
 signal targeted(node)
+signal end_of_fight
 var type = 'Boblin'
 var healthPoints = 10
 
@@ -23,9 +24,12 @@ func _input(event):
 func activate_card():
 	pass
 
-func death():
+func death(): #if enemy spawns something after death pay attention to commands order
 	queue_free()
-	pass
+	print('asdfghb')
+	if get_parent().get_children().size() == 1:
+		print('end of fight')
+		emit_signal('end_of_fight')
 	
 func _draw():
 	#wstawia odpowiedniego sprita zależnie od type

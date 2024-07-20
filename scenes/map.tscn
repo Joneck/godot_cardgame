@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnrbxyrmh37km"]
+
+[ext_resource type="PackedScene" uid="uid://cmenc46fx7ur8" path="res://scenes/map_question_mark.tscn" id="1_jbcn4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="mqm" parent="." instance=ExtResource("1_jbcn4")]
+position = Vector2(197, 230)
+
+[node name="mqm2" parent="." instance=ExtResource("1_jbcn4")]
+position = Vector2(436, 477)
+
+[node name="mqm3" parent="." instance=ExtResource("1_jbcn4")]
+position = Vector2(656, 192)
+
+[node name="mqm4" parent="." instance=ExtResource("1_jbcn4")]
+position = Vector2(925, 406)

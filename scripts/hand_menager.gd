@@ -26,16 +26,15 @@ func _on_new_turn():
 	instance.position = Vector2(515,515)
 	for child in get_children():
 		child.queue_free()
+		remove_child(child)
 		pass
 	add_child(instance)
 	instance.connect('card_played', _on_card_played)
 	emit_signal('new_turn')
-	pass
-	
-	
+
 func _on_card_played(child):
 	child.queue_free()
-	
+
 func draw_cards():
 	#TODO
 	pass

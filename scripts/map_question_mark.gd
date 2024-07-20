@@ -24,12 +24,13 @@ func _on_animation_finished():
 
 
 func _on_button_up():
-	entered = true
-	var currentEvent = preload("res://scenes/fight_scene.tscn").instantiate()
-	for child in get_tree().get_root().get_children():
-		child.hide()
-	get_tree().get_root().add_child(currentEvent)
-	print('test')
+	if not completed:
+		entered = true
+		var currentEvent = preload("res://scenes/fight_scene.tscn").instantiate()
+		for child in get_tree().get_root().get_children():
+			child.hide()
+		get_tree().get_root().add_child(currentEvent)
+		print('test')
 	
 func _on_draw():
 	if entered:

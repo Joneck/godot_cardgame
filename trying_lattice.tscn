@@ -1,0 +1,97 @@
+[gd_scene load_steps=2 format=3 uid="uid://djxmogxgnjscm"]
+
+[ext_resource type="PackedScene" uid="uid://cmenc46fx7ur8" path="res://scenes/map/map_question_mark.tscn" id="1_2ctde"]
+
+[node name="ScrollContainer" type="ScrollContainer"]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = 6.0
+offset_right = 100.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control2" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control2" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control3" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control3" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control4" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control4" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control5" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control5" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control6" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control6" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control7" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control7" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control8" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control8" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control9" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control9" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control10" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control10" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)
+
+[node name="Control11" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="AnimatedSprite2D" parent="VBoxContainer/Control11" instance=ExtResource("1_2ctde")]
+position = Vector2(50, 50)

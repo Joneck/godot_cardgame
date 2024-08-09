@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://b72dpu6axbml"]
+
+[ext_resource type="SpriteFrames" uid="uid://b1otd4uqmh16i" path="res://scenes/map/map_q_button/map_q_button.tres" id="1_5dsx8"]
+[ext_resource type="Script" path="res://scripts/map_question_mark.gd" id="2_4ev37"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+position = Vector2(436, 314)
+sprite_frames = ExtResource("1_5dsx8")
+animation = &"completed_transition"
+frame = 1
+frame_progress = 1.0
+script = ExtResource("2_4ev37")
+
+[node name="Button" type="Button" parent="."]
+show_behind_parent = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -50.0
+offset_top = -50.0
+offset_right = -50.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
+[connection signal="draw" from="." to="." method="_on_draw"]
+[connection signal="button_up" from="Button" to="." method="_on_button_up"]
+[connection signal="mouse_entered" from="Button" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_mouse_exited"]

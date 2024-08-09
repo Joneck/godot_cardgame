@@ -3,7 +3,7 @@
 [ext_resource type="SpriteFrames" uid="uid://b1otd4uqmh16i" path="res://scenes/map/map_q_button/map_q_button.tres" id="1_5dsx8"]
 [ext_resource type="Script" path="res://scripts/map_question_mark.gd" id="2_4ev37"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D"]
 position = Vector2(436, 314)
 sprite_frames = ExtResource("1_5dsx8")
 animation = &"completed_transition"

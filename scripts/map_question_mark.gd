@@ -31,6 +31,7 @@ func _on_button_up():
 		entered = true
 		var currentEvent = preload("res://scenes/fight_scene.tscn").instantiate()
 		for child in get_tree().get_root().get_children():
+			play("default")
 			child.hide()
 		get_tree().get_root().add_child(currentEvent)
 		print('test')
@@ -39,7 +40,7 @@ func _on_draw():
 	if entered:
 		completed = true
 		stop()
-		currentAnim = 'completed_transition'
-		play('completed_transition')
-	entered = false
+		currentAnim = 'visited_transition'
+		play('visited_transition')
+		entered = false
 

@@ -4,9 +4,6 @@ var currentAnim = 'default'
 var entered = false
 var completed = false
 
-func _ready():
-	play('default')
-
 func _on_mouse_entered():
 	if not completed:
 		currentAnim = 'hover_transition'
@@ -38,8 +35,6 @@ func _on_button_up():
 func _on_draw():
 	if entered:
 		completed = true
-		stop()
-		currentAnim = 'completed_transition'
-		play('completed_transition')
-	entered = false
-
+		currentAnim = 'visited_transition'
+		play('visited_transition')
+		entered = false

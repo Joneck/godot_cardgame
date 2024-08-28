@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dh0itl6e8qxk1"]
 
-[ext_resource type="Texture2D" uid="uid://bua6prxu4rlqo" path="res://artwork/dagger.png" id="1_lrggk"]
+[ext_resource type="Texture2D" uid="uid://bua6prxu4rlqo" path="res://artwork/cards/dagger.png" id="1_lrggk"]
 [ext_resource type="Script" path="res://scripts/card.gd" id="2_v85tm"]
 
 [node name="Sprite2D" type="Sprite2D"]

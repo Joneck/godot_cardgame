@@ -1,21 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://6fhiemm41lad"]
+[gd_scene load_steps=2 format=3 uid="uid://6fhiemm41lad"]
 
 [ext_resource type="Script" path="res://scenes/map/map_body/map_body_vbox.gd" id="1_tnrb2"]
-[ext_resource type="PackedScene" uid="uid://bvsjm5kkgsevb" path="res://scenes/map/map_questionMark/map_questionMark.tscn" id="2_a2o0k"]
 
 [node name="ScrollContainer" type="ScrollContainer"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_right = 50.0
+offset_bottom = 720.0
 grow_horizontal = 2
-grow_vertical = 2
+pivot_offset = Vector2(200, 0)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 3
-alignment = 1
+size_flags_vertical = 6
+alignment = 2
 script = ExtResource("1_tnrb2")
-
-[node name="Button" parent="VBoxContainer" instance=ExtResource("2_a2o0k")]
-layout_mode = 2

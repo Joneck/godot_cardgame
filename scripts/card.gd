@@ -3,10 +3,10 @@ extends Sprite2D
 var active = false
 signal card_played
 signal damage_request
+signal enemies_request
 
-func _ready(): #Add enemies as children of one node and make it more readable
-		for enemy in get_parent().get_node('%Enemies').get_children():
-			enemy.targeted.connect(_on_enemy_targeted)
+func _ready():
+	pass
 
 func _input(event):
 	if event is InputEventMouseButton and event.is_pressed() and event.button_index == MOUSE_BUTTON_RIGHT:
@@ -22,11 +22,15 @@ func _input(event):
 	else:
 		position.y = 515	
 
-
+func add_enemies(en_list):
+	var enemies = en_list
+	for enemy in enemies:
+		enemy.connect('targeted', _on_enemy_targeted)
 
 #Actually playing card
 func play_card(enemy):
 	emit_signal('damage_request',[enemy], 5)
+	send_card_flying(enemy.transform)
 	pass
 
 func _on_enemy_targeted(enemy):
@@ -35,5 +39,8 @@ func _on_enemy_targeted(enemy):
 		emit_signal('card_played',self)
 		#add mana check
 	pass
-	
+
+func send_card_flying(target):
+	print(target)
+	pass
 
